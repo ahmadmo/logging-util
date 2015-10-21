@@ -181,13 +181,6 @@ class Log4JLogger extends AbstractInternalLogger {
         }
     }
 
-    /**
-     * Log an exception (throwable) at the WARN level with an accompanying
-     * message.
-     *
-     * @param msg the message accompanying the exception
-     * @param t   the exception (throwable) to log
-     */
     @Override
     public void warn(String msg, Throwable t) {
         logger.log(FQCN, Level.WARN, msg, t);
